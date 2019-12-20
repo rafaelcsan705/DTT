@@ -99,13 +99,9 @@
 		71118BE123AD179100730774 /* RSR Pechhulp */ = {
 			isa = PBXGroup;
 			children = (
-				71118BE223AD179100730774 /* AppDelegate.swift */,
-				71118BE423AD179100730774 /* SceneDelegate.swift */,
-				71118BE623AD179100730774 /* ViewController.swift */,
-				71118BE823AD179100730774 /* Main.storyboard */,
-				71118BEB23AD179600730774 /* Assets.xcassets */,
-				71118BED23AD179600730774 /* LaunchScreen.storyboard */,
-				71118BF023AD179600730774 /* Info.plist */,
+				71DF5E4123AD3B5F00658391 /* Controllers */,
+				71DF5E4023AD3B4E00658391 /* Views */,
+				71DF5E3F23AD38C800658391 /* Support */,
 			);
 			path = "RSR Pechhulp";
 			sourceTree = "<group>";
@@ -126,6 +122,34 @@
 				71118C0623AD179700730774 /* Info.plist */,
 			);
 			path = "RSR PechhulpUITests";
+			sourceTree = "<group>";
+		};
+		71DF5E3F23AD38C800658391 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				71118BEB23AD179600730774 /* Assets.xcassets */,
+				71118BE223AD179100730774 /* AppDelegate.swift */,
+				71118BE423AD179100730774 /* SceneDelegate.swift */,
+				71118BF023AD179600730774 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		71DF5E4023AD3B4E00658391 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				71118BE823AD179100730774 /* Main.storyboard */,
+				71118BED23AD179600730774 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		71DF5E4123AD3B5F00658391 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				71118BE623AD179100730774 /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,6 +390,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Support/info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -420,6 +445,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Support/info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -435,12 +461,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8JSPBLZJX6;
-				INFOPLIST_FILE = "RSR Pechhulp/Info.plist";
+				INFOPLIST_FILE = "RSR Pechhulp/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rafaelcsantos.RSR-Pechhulp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -453,12 +481,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8JSPBLZJX6;
-				INFOPLIST_FILE = "RSR Pechhulp/Info.plist";
+				INFOPLIST_FILE = "RSR Pechhulp/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rafaelcsantos.RSR-Pechhulp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
