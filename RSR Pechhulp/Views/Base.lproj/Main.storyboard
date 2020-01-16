@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lXe-vK-pOA">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -8,14 +8,69 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Info View Controller-->
+        <scene sceneID="1My-sh-u8x">
+            <objects>
+                <viewController storyboardIdentifier="InfoViewController" id="M6c-pN-Dpy" customClass="InfoViewController" customModule="RSR_Pechhulp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xPg-7A-H4Q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vx2-wk-Ak5">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="over_image" translatesAutoresizingMaskIntoConstraints="NO" id="stA-DF-GC9">
+                                        <rect key="frame" x="8" y="8" width="398" height="216"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ump-go-IXq">
+                                        <rect key="frame" x="16" y="317" width="382" height="457"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NLT-ge-sqe">
+                                        <rect key="frame" x="0.0" y="244" width="414" height="10"/>
+                                        <color key="backgroundColor" name="blueButton"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="stA-DF-GC9" firstAttribute="top" secondItem="Vx2-wk-Ak5" secondAttribute="topMargin" id="4dQ-x7-51V"/>
+                                    <constraint firstItem="stA-DF-GC9" firstAttribute="leading" secondItem="Vx2-wk-Ak5" secondAttribute="leadingMargin" id="F3z-MX-nxU"/>
+                                    <constraint firstAttribute="trailing" secondItem="NLT-ge-sqe" secondAttribute="trailing" constant="20" symbolic="YES" id="Ftf-Wg-zjW"/>
+                                    <constraint firstItem="NLT-ge-sqe" firstAttribute="leading" secondItem="Vx2-wk-Ak5" secondAttribute="leading" constant="20" symbolic="YES" id="OAV-3e-Fia"/>
+                                    <constraint firstAttribute="trailing" secondItem="ump-go-IXq" secondAttribute="trailing" constant="16" id="PgW-IR-UZ5"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="stA-DF-GC9" secondAttribute="trailing" id="V1g-bg-yXr"/>
+                                    <constraint firstAttribute="bottom" secondItem="ump-go-IXq" secondAttribute="bottom" constant="20" symbolic="YES" id="XLY-iC-foN"/>
+                                    <constraint firstItem="ump-go-IXq" firstAttribute="leading" secondItem="Vx2-wk-Ak5" secondAttribute="leading" constant="16" id="reY-7i-8CI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="X80-pX-prv" firstAttribute="bottom" secondItem="Vx2-wk-Ak5" secondAttribute="bottom" id="E5s-QB-rw3"/>
+                            <constraint firstItem="Vx2-wk-Ak5" firstAttribute="top" secondItem="X80-pX-prv" secondAttribute="top" id="EsR-Sm-YNS"/>
+                            <constraint firstItem="Vx2-wk-Ak5" firstAttribute="leading" secondItem="X80-pX-prv" secondAttribute="leading" id="Rk0-cX-l4G"/>
+                            <constraint firstItem="Vx2-wk-Ak5" firstAttribute="trailing" secondItem="X80-pX-prv" secondAttribute="trailing" id="bVR-1B-Dae"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="X80-pX-prv"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hev-Fz-JYN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r5v-Z7-Jhm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="718.84057971014499" y="156.69642857142856"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="WlJ-9U-h9b">
             <objects>
                 <navigationController id="lXe-vK-pOA" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qQl-yj-GTV">
+                    <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backIndicatorImage="annuleren_normal" backIndicatorTransitionMaskImage="btn_pressed_ipad" id="qQl-yj-GTV">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.31372549020000001" green="0.63137254899999995" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" name="blueBackground"/>
                     </navigationBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="GvK-jH-hyM"/>
@@ -25,10 +80,10 @@
             </objects>
             <point key="canvasLocation" x="-1436" y="159"/>
         </scene>
-        <!--View Controller-->
+        <!--RSR Revalidatieservice-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RSR_Pechhulp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MenuViewController" id="BYZ-38-t0r" customClass="MenuViewController" customModule="RSR_Pechhulp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,49 +91,112 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_background" translatesAutoresizingMaskIntoConstraints="NO" id="Uru-ER-FGL">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QjN-4y-OyW">
+                                <rect key="frame" x="16" y="762" width="382" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="FJS-zx-9XH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title=" RSR Pechhulp" image="ic_attention" backgroundImage="btn_bel_normal"/>
+                                <connections>
+                                    <segue destination="v4q-Z1-Ndm" kind="show" id="HmU-ab-3jg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="QjN-4y-OyW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="9X5-NE-uFZ"/>
                             <constraint firstItem="Uru-ER-FGL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Xqp-gf-A6w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QjN-4y-OyW" secondAttribute="bottom" constant="50" id="d1V-iC-3hd"/>
                             <constraint firstAttribute="bottom" secondItem="Uru-ER-FGL" secondAttribute="bottom" id="fKi-fm-KJ5"/>
                             <constraint firstItem="Uru-ER-FGL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hZn-oG-QSH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QjN-4y-OyW" secondAttribute="trailing" constant="16" id="iqK-eI-4gR"/>
                             <constraint firstItem="Uru-ER-FGL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qyi-v2-akL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="DOG-A8-mMw">
+                    <navigationItem key="navigationItem" title="RSR Revalidatieservice" id="DOG-A8-mMw">
+                        <barButtonItem key="backBarButtonItem" title="Terug" id="vwH-nW-Cht"/>
                         <barButtonItem key="rightBarButtonItem" image="ic_over_normal" landscapeImage="I" style="done" id="dVc-Fm-FEz">
                             <color key="tintColor" name="greenIcon"/>
+                            <connections>
+                                <segue destination="M6c-pN-Dpy" kind="show" id="bNu-PR-FIb"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-659.4202898550725" y="158.70535714285714"/>
+            <point key="canvasLocation" x="-660" y="157.87106446776613"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="UJl-OK-ePD">
             <objects>
-                <viewController id="v4q-Z1-Ndm" customClass="ViewController" customModule="RSR_Pechhulp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapViewController" id="v4q-Z1-Ndm" customClass="MapViewController" customModule="RSR_Pechhulp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mgi-vh-I1A">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="lCB-dy-9jv">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Byu-GP-AYa">
+                                <rect key="frame" x="16" y="812" width="382" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="OGf-LG-O7f"/>
+                                </constraints>
+                                <state key="normal" image="ic_phone" backgroundImage="btn_bel_normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Bel RSR nu">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" metaFont="system" size="27"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Jh8-QQ-ja5" firstAttribute="trailing" secondItem="lCB-dy-9jv" secondAttribute="trailing" id="HwM-C7-pP7"/>
+                            <constraint firstAttribute="bottom" secondItem="lCB-dy-9jv" secondAttribute="bottom" id="Oml-us-Bjq"/>
+                            <constraint firstItem="Byu-GP-AYa" firstAttribute="bottom" secondItem="Jh8-QQ-ja5" secondAttribute="bottom" id="Q0h-XA-m9n"/>
+                            <constraint firstItem="lCB-dy-9jv" firstAttribute="top" secondItem="Jh8-QQ-ja5" secondAttribute="top" id="QWb-wg-a82"/>
+                            <constraint firstItem="Jh8-QQ-ja5" firstAttribute="trailing" secondItem="Byu-GP-AYa" secondAttribute="trailing" constant="16" id="ZOJ-pg-Gga"/>
+                            <constraint firstItem="lCB-dy-9jv" firstAttribute="leading" secondItem="Jh8-QQ-ja5" secondAttribute="leading" id="lIH-jD-0lh"/>
+                            <constraint firstItem="Byu-GP-AYa" firstAttribute="leading" secondItem="Jh8-QQ-ja5" secondAttribute="leading" constant="16" id="mWC-qP-coq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Jh8-QQ-ja5"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Six-UD-MXh"/>
+                    <connections>
+                        <outlet property="mapView" destination="lCB-dy-9jv" id="SYv-3f-oG5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4wD-VA-RJI" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="164" y="159"/>
+            <point key="canvasLocation" x="46" y="159"/>
         </scene>
     </scenes>
     <resources>
         <image name="I" width="16" height="16"/>
+        <image name="annuleren_normal" width="106" height="26"/>
+        <image name="btn_bel_normal" width="216" height="48"/>
+        <image name="btn_pressed_ipad" width="362" height="68"/>
+        <image name="ic_attention" width="42" height="36"/>
         <image name="ic_over_normal" width="30" height="30"/>
+        <image name="ic_phone" width="32" height="36"/>
         <image name="img_background" width="320" height="416"/>
+        <image name="over_image" width="320" height="216"/>
+        <namedColor name="blueBackground">
+            <color red="0.31299999356269836" green="0.62900000810623169" blue="0.75700002908706665" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="blueButton">
+            <color red="0.24699999392032623" green="0.56099998950958252" blue="0.71799999475479126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="greenIcon">
-            <color red="0.80000000000000004" green="0.83137254900000002" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.80000001192092896" green="0.83099997043609619" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
